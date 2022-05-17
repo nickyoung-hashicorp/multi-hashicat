@@ -8,5 +8,7 @@ module "azure" {
 
 module "gcp" {
   source = "./gcp"
-  project = "p-hacomuho3vtnrwbz7q79tra2pdu3"
+  project = var.gcp_project
 }
+
+variable "gcp_project" {}
