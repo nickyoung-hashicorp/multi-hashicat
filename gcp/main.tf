@@ -82,7 +82,7 @@ resource "null_resource" "configure-cat-app" {
   }
 
   provisioner "file" {
-    source      = "files/"
+    source      = "./gcp/files/"
     destination = "/home/ubuntu/"
 
     connection {
