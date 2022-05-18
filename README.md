@@ -1,10 +1,10 @@
 # multi-hashicat for AWS, Azure, and GCP
 Hashicat: A terraform built application for use in Hashicorp workshops
 
-Includes "Meow World" website across all 3 major public cloud providers.
+Includes "Meow World" website across all 3 major public cloud providers using Instruqt.
 
 ## Setup Credentials
-AWS and Azure credentials are already sourced properly.  Configure and source Google Cloud credentials:
+AWS and Azure credentials are already sourced properly in Instruqt.  Configure and source Google Cloud credentials:
 ```sh
 export TF_VAR_project=$INSTRUQT_GCP_PROJECT_GCP_PROJECT_PROJECT_ID
 grep $INSTRUQT_GCP_PROJECT_GCP_PROJECT_PROJECT_ID /root/.bashrc || echo "export TF_VAR_project=\"$INSTRUQT_GCP_PROJECT_GCP_PROJECT_PROJECT_ID\"" >> /root/.bashrc
@@ -30,9 +30,9 @@ terraform apply -auto-approve -parallelism=20
 ```
 
 ## Demo
-Show 3 different web servers hosting the HashiCat image across AWS, Azure, and GCP.
+Show 3 different web servers hosting the HashiCat image across AWS, Azure, and GCP by clicking on the outputs following the completed apply.
 
 ## Destroy Infrastructure
 ```sh
-terraform destroy -auto-approve
+terraform destroy -auto-approve -parallelism=20
 ```
