@@ -1,5 +1,5 @@
 # AWS hashicat URL
-output "aws" {
+output "aws_hashicat" {
     value = module.aws.catapp_url
 }
 
